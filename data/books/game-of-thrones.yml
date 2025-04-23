@@ -1,0 +1,33 @@
+name: A Song of Ice and Fire
+author: George R. R. Martin
+slug: game-of-thrones
+releases:
+  - title: A Dream of Spring
+    platform: Print
+    release_date: TBD
+    note: Planned final book in the series, not yet released
+
+  - title: The Winds of Winter
+    platform: Print
+    release_date: TBD
+    note: Forthcoming, no official release date yet
+
+  - title: A Dance with Dragons
+    platform: Print
+    release_date: 2011-07-12
+
+  - title: A Feast for Crows
+    platform: Print
+    release_date: 2005-10-17
+
+  - title: A Storm of Swords
+    platform: Print
+    release_date: 2000-08-08
+
+  - title: A Clash of Kings
+    platform: Print
+    release_date: 1998-11-16
+
+  - title: A Game of Thrones
+    platform: Print
+    release_date: 1996-08-06
