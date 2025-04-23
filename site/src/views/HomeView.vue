@@ -8,7 +8,7 @@ const yamlData = ref<PageYaml | null>(null)
 onMounted(async () => {
   const res = await fetch('/data/games/mario.yml')
   const text = await res.text()
-  yamlData.value = yaml.load(text) as any
+  yamlData.value = yaml.load(text) as PageYaml;
 })
 
 function simpleDate(date: Date) {
@@ -32,23 +32,21 @@ function yearsBetween(dateA: Date, dateB: Date) {
 
 <template>
   <main>
-    <div>
-      <h2>Fetched YAML</h2>
+    <div v-if="yamlData">
+      <h2>{{ yamlData.name }} release date data</h2>
 
-      <div v-if="yamlData">
-        {{ yamlData.name }}
-        <!-- {{ yamlData }} -->
-        <ul>
-          <li v-for="(release, index) in yamlData.releases" :key="release.title">
-            <p v-if="index > 0">{{ yearsBetween(release.release_date, yamlData.releases[index -
-              1].release_date).toFixed(1) }} years</p>
-            <p>{{ release.title }}</p>
-            <p>{{ simpleDate(release.release_date) }}</p>
-          </li>
-        </ul>
-      </div>
-      <p v-else>Loading...</p>
+      <p>Creator: {{ yamlData.creator }}</p>
+
+      <ul>
+        <li v-for="(release, index) in yamlData.releases" :key="release.title">
+          <p v-if="index > 0">{{ yearsBetween(release.release_date, yamlData.releases[index -
+            1].release_date).toFixed(1) }} years</p>
+          <p>{{ release.title }}</p>
+          <p>{{ simpleDate(release.release_date) }}</p>
+        </li>
+      </ul>
     </div>
+    <p v-else>Loading...</p>
 
   </main>
 </template>
