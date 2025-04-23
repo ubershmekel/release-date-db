@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import yaml from 'js-yaml'
-import type { PageYaml } from '@/types/yamls'
+import type { PageYaml, Release } from '@/types/yamls'
 
 const yamlData = ref<PageYaml | null>(null)
 
 onMounted(async () => {
   const res = await fetch('/data/games/mario.yml')
   const text = await res.text()
-  yamlData.value = yaml.load(text) as PageYaml;
+  const data = yaml.load(text) as PageYaml;
+  console.log(data);
+  yamlData.value = data;
 })
 
 function simpleDate(date: Date) {
@@ -21,11 +23,20 @@ function monthsBetween(dateA: Date, dateB: Date) {
   const diffMs = Math.abs(dateB.getTime() - dateA.getTime());
   return diffMs / msInMonth;
 }
+
 function yearsBetween(dateA: Date, dateB: Date) {
   // Get the amount of months between two dates
   const msInMonth = 365 * 24 * 60 * 60 * 1000; // average month in ms
   const diffMs = Math.abs(dateB.getTime() - dateA.getTime());
   return diffMs / msInMonth;
+}
+
+function averageReleaseGap(releases: Release[]) {
+  const dates = releases.map(release => release.release_date)
+  const sortedDates = dates.sort((a, b) => a.getTime() - b.getTime())
+  const firstDate = sortedDates[0]
+  const lastDate = sortedDates[sortedDates.length - 1]
+  return yearsBetween(firstDate, lastDate) / (releases.length - 1);
 }
 
 </script>
@@ -35,14 +46,18 @@ function yearsBetween(dateA: Date, dateB: Date) {
     <div v-if="yamlData">
       <h2>{{ yamlData.name }} release date data</h2>
 
-      <p>Creator: {{ yamlData.creator }}</p>
-
+      <p>Creator: {{ yamlData.company }}</p>
+      <p>Since last release: <span class="years-between">{{ yearsBetween(new Date(),
+        yamlData.releases[0].release_date).toFixed(1) }} years</span></p>
+      <p>Average years between releases: <span class="years-between">{{ averageReleaseGap(yamlData.releases).toFixed(1)
+          }} years</span></p>
+      <p>Releases:</p>
       <ul>
         <li v-for="(release, index) in yamlData.releases" :key="release.title">
-          <p v-if="index > 0">{{ yearsBetween(release.release_date, yamlData.releases[index -
-            1].release_date).toFixed(1) }} years</p>
-          <p>{{ release.title }}</p>
-          <p>{{ simpleDate(release.release_date) }}</p>
+          <p>{{ simpleDate(release.release_date) }} <span class="title">{{ release.title }}</span></p>
+          <p class="years-between" v-if="index + 1 < yamlData.releases.length">{{ yearsBetween(
+            yamlData.releases[index + 1].release_date, release.release_date).toFixed(1) }} years</p>
+          <p></p>
         </li>
       </ul>
     </div>
@@ -50,3 +65,13 @@ function yearsBetween(dateA: Date, dateB: Date) {
 
   </main>
 </template>
+
+<style>
+.title {
+  opacity: 0.7;
+}
+
+.years-between {
+  font-weight: bold;
+}
+</style>
