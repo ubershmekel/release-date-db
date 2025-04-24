@@ -2,6 +2,8 @@
 import { ref, onMounted } from 'vue'
 import yaml from 'js-yaml'
 import type { PageYaml, Release } from '@/types/yamls'
+import { isValidDate, yearsBetween } from '@/utils/dates'
+import ReleaseList from '@/components/ReleaseList.vue'
 
 const yamlData = ref<PageYaml | null>(null)
 const errorMessage = ref<string | null>(null)
@@ -23,28 +25,6 @@ onMounted(async () => {
   yamlData.value = data;
 })
 
-function simpleDate(date: Date) {
-  if (isValidDate(date)) {
-    return date.toISOString().split('T')[0]
-  } else {
-    return date;
-  }
-}
-
-function monthsBetween(dateA: Date, dateB: Date) {
-  // Get the amount of months between two dates
-  const msInMonth = 30.44 * 24 * 60 * 60 * 1000; // average month in ms
-  const diffMs = Math.abs(dateB.getTime() - dateA.getTime());
-  return diffMs / msInMonth;
-}
-
-function yearsBetween(dateA: Date, dateB: Date) {
-  // Get the amount of months between two dates
-  const msInMonth = 365 * 24 * 60 * 60 * 1000; // average month in ms
-  const diffMs = Math.abs(dateB.getTime() - dateA.getTime());
-  return diffMs / msInMonth;
-}
-
 function averageReleaseGap(releases: Release[]) {
   const dates = releases.filter(release => isValidDate(release.release_date)).map(release => release.release_date)
   dates.push(new Date());
@@ -54,17 +34,7 @@ function averageReleaseGap(releases: Release[]) {
   return yearsBetween(firstDate, lastDate) / (releases.length - 1);
 }
 
-function isValidDate(value: unknown): value is Date {
-  return value instanceof Date && !isNaN(value.getTime());
-}
 
-function recentRelease(releases: Release[]): Release | undefined {
-  for (const release of releases) {
-    if (isValidDate(release.release_date)) {
-      return release
-    }
-  }
-}
 
 </script>
 
@@ -78,20 +48,10 @@ function recentRelease(releases: Release[]): Release | undefined {
       <h2>{{ yamlData.name }} release dates</h2>
 
       <p>Creator: {{ yamlData.company }}</p>
-      <p>Average years between releases: <span class="years-between">{{ averageReleaseGap(yamlData.releases).toFixed(1)
-      }} years</span></p>
+      <p>Average release gap: <span class="years-between">{{ averageReleaseGap(yamlData.releases).toFixed(1)
+          }} years</span></p>
       <p>Releases:</p>
-      <ul>
-        <li>Since last release: <span class="years-between">{{ yearsBetween(new Date(),
-          recentRelease(yamlData.releases)!.release_date).toFixed(1) }} years</span></li>
-        <li v-for="(release, index) in yamlData.releases" :key="release.title">
-          <p>{{ simpleDate(release.release_date) }} <span class="title">{{ release.title }}</span></p>
-          <p class="years-between" v-if="index + 1 < yamlData.releases.length && isValidDate(release.release_date)">{{
-            yearsBetween(
-              yamlData.releases[index + 1].release_date, release.release_date).toFixed(1) }} years</p>
-          <p></p>
-        </li>
-      </ul>
+      <ReleaseList :releases="yamlData.releases"></ReleaseList>
     </div>
 
   </main>
