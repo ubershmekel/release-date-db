@@ -15,6 +15,9 @@ function recentRelease(releases: Release[]): Release | undefined {
 
 const gaps = [];
 for (let i = 1; i < props.releases.length; i++) {
+  if (!isValidDate(props.releases[i - 1].release_date)) {
+    continue;
+  }
   gaps.push(yearsBetween(props.releases[i - 1].release_date, props.releases[i].release_date))
 }
 const maxGap = Math.max(...gaps);
