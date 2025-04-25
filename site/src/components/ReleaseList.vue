@@ -1,16 +1,17 @@
 <template>
-  <p>Average release gap
+  <div>Average release gap
     <GapBar :gap="averageGap" :maxGap="maxGap"></GapBar>
-  </p>
+  </div>
   <hr />
   <ul class="releases">
     <li>Since last release
       <GapBar :gap="gapByIndex(-1)" :max-gap="maxGap"></GapBar>
     </li>
     <li v-for="(release, index) in releases" :key="release.title">
-      <p>{{ simpleDate(release.release_date) }} <span class="title">{{ release.title }}</span>
+      <div><span class="date">{{ simpleDate(release.release_date) }}</span> <span class="title">{{ release.title
+          }}</span>
         <span v-if="release.release_date > new Date()" class="future-release"> (in the future)</span>
-      </p>
+      </div>
       <GapBar v-if="hasGap(index)" :gap="gapByIndex(index)" :maxGap="maxGap"></GapBar>
     </li>
   </ul>
@@ -63,8 +64,9 @@ function hasGap(index: number): boolean {
 }
 
 hr {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   width: 30rem;
+  margin: 0;
 }
 
 ul {
@@ -73,5 +75,13 @@ ul {
 
 .future-release {
   color: rgb(242, 0, 193);
+}
+
+.title {
+  font-weight: bold;
+}
+
+.date {
+  opacity: 0.8;
 }
 </style>

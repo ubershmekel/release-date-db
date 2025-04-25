@@ -16,8 +16,8 @@ const props = defineProps(['gap', 'maxGap'])
       <span class="plus">+</span>
     </div>
 
-    <p class="years-between">
-      {{ gap.toFixed(1) }} years</p>
+    <div class="years-between">
+      {{ gap.toFixed(1) }} years</div>
 
   </div>
 
@@ -59,5 +59,9 @@ const props = defineProps(['gap', 'maxGap'])
   /* vertical alignment */
   justify-content: center;
   /* horizontal alignment */
+}
+
+.years-between {
+  margin-bottom: 0;
 }
 </style>
