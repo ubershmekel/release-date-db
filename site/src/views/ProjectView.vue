@@ -53,7 +53,7 @@ onMounted(async () => {
       <h2>{{ yamlData.name }}</h2>
       <h3>Release dates</h3>
 
-      <p>Creator: {{ yamlData.company }}</p>
+      <p>Creator: {{ yamlData.creator }}</p>
       <ReleaseList :releases="yamlData.releases"></ReleaseList>
     </div>
   </div>
