@@ -21,7 +21,6 @@ for (const key of keys) {
 
 <template>
   <main>
-    <h2>Projects</h2>
     <div v-for="categoryObj in categoryList" :key="categoryObj.categoryName">
       <h3>{{ categoryObj.categoryName }}</h3>
       <ul>
