@@ -17,7 +17,7 @@ const router = createRouter({
       component: AboutView,
     },
     {
-      path: '/:folder/:file',
+      path: '/rd/:folder/:file',
       name: 'project',
       props: true,
       // route level code-splitting
