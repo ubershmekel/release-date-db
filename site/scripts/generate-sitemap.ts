@@ -30,11 +30,14 @@ async function generateSitemap() {
             const category = path.basename(dir)
             const link = `/rd/${category}/${data.slug}`
             sitemap.push({ name: data.name, link, category })
+            console.log(`Added ${filePath} to sitemap`)
           } else {
             console.warn(`Skipping ${filePath}: name or slug missing`)
           }
         } catch (error) {
-          console.error(`Error reading or parsing ${filePath}:`, error)
+          console.error(`⚠️Error reading or parsing ${filePath}:`, error)
+          // Exit so we notice this failure
+          process.exit(1)
         }
       }
     })

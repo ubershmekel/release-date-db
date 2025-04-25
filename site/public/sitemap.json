@@ -45,6 +45,11 @@
     "category": "movies"
   },
   {
+    "name": "iPhone",
+    "link": "/rd/phones/iphone",
+    "category": "phones"
+  },
+  {
     "name": "Attack on Titan",
     "link": "/rd/shows/attack-on-titan",
     "category": "shows"
