@@ -2,174 +2,74 @@ name: iPhone
 creator: Apple
 slug: iphone
 releases:
-  - title: iPhone
-    generation: 1st
-    release_date: 2007-06-29
-
-  - title: iPhone 3G
-    generation: 2nd
-    release_date: 2008-07-11
-
-  - title: iPhone 3GS
-    generation: 3rd
-    release_date: 2009-06-19
-
-  - title: iPhone 4
-    generation: 4th
-    release_date: 2010-06-24
-
-  - title: iPhone 4s
-    generation: 5th
-    release_date: 2011-10-14
-
-  - title: iPhone 5
-    generation: 6th
-    release_date: 2012-09-21
-
-  - title: iPhone 5c
-    generation: 6th (variant)
-    release_date: 2013-09-20
-
-  - title: iPhone 5s
-    generation: 7th
-    release_date: 2013-09-20
-
-  - title: iPhone 6
-    generation: 8th
-    release_date: 2014-09-19
-
-  - title: iPhone 6 Plus
-    generation: 8th (variant)
-    release_date: 2014-09-19
-
-  - title: iPhone 6s
-    generation: 9th
-    release_date: 2015-09-25
-
-  - title: iPhone 6s Plus
-    generation: 9th (variant)
-    release_date: 2015-09-25
-
-  - title: iPhone SE (1st generation)
-    generation: 9th (compact)
-    release_date: 2016-03-31
-
-  - title: iPhone 7
-    generation: 10th
-    release_date: 2016-09-16
-
-  - title: iPhone 7 Plus
-    generation: 10th (variant)
-    release_date: 2016-09-16
-
-  - title: iPhone 8
-    generation: 11th
-    release_date: 2017-09-22
-
-  - title: iPhone 8 Plus
-    generation: 11th (variant)
-    release_date: 2017-09-22
-
-  - title: iPhone X
-    generation: 11th (premium)
-    release_date: 2017-11-03
-
-  - title: iPhone XR
-    generation: 12th (budget)
-    release_date: 2018-10-26
-
-  - title: iPhone XS
-    generation: 12th
-    release_date: 2018-09-21
-
-  - title: iPhone XS Max
-    generation: 12th (large)
-    release_date: 2018-09-21
-
-  - title: iPhone 11
-    generation: 13th
-    release_date: 2019-09-20
-
-  - title: iPhone 11 Pro
-    generation: 13th (premium)
-    release_date: 2019-09-20
-
-  - title: iPhone 11 Pro Max
-    generation: 13th (large)
-    release_date: 2019-09-20
-
-  - title: iPhone SE (2nd generation)
-    generation: 13th (compact)
-    release_date: 2020-04-24
-
-  - title: iPhone 12 Mini
-    generation: 14th (small)
-    release_date: 2020-11-13
-
-  - title: iPhone 12
-    generation: 14th
-    release_date: 2020-10-23
-
-  - title: iPhone 12 Pro
-    generation: 14th (premium)
-    release_date: 2020-10-23
-
-  - title: iPhone 12 Pro Max
-    generation: 14th (large)
-    release_date: 2020-11-13
-
-  - title: iPhone 13 Mini
-    generation: 15th (small)
-    release_date: 2021-09-24
-
-  - title: iPhone 13
-    generation: 15th
-    release_date: 2021-09-24
-
-  - title: iPhone 13 Pro
-    generation: 15th (premium)
-    release_date: 2021-09-24
-
-  - title: iPhone 13 Pro Max
-    generation: 15th (large)
-    release_date: 2021-09-24
-
-  - title: iPhone SE (3rd generation)
-    generation: 15th (compact)
-    release_date: 2022-03-18
-
-  - title: iPhone 14
-    generation: 16th
-    release_date: 2022-09-16
-
-  - title: iPhone 14 Plus
-    generation: 16th (large)
-    release_date: 2022-10-07
-
-  - title: iPhone 14 Pro
-    generation: 16th (premium)
-    release_date: 2022-09-16
-
-  - title: iPhone 14 Pro Max
-    generation: 16th (flagship)
-    release_date: 2022-09-16
+  - title: iPhone 16
+    generation: 18th
+    release_date: 2024-09-20
 
   - title: iPhone 15
     generation: 17th
     release_date: 2023-09-22
 
-  - title: iPhone 15 Plus
-    generation: 17th (large)
-    release_date: 2023-09-22
+  - title: iPhone 14
+    generation: 16th
+    release_date: 2022-09-16
 
-  - title: iPhone 15 Pro
-    generation: 17th (premium)
-    release_date: 2023-09-22
+  - title: iPhone 13
+    generation: 15th
+    release_date: 2021-09-24
 
-  - title: iPhone 15 Pro Max
-    generation: 17th (flagship)
-    release_date: 2023-09-22
+  - title: iPhone 12
+    generation: 14th
+    release_date: 2020-10-23
 
-  - title: iPhone 16
-    generation: 18th
-    release_date: 2024-09-20
+  - title: iPhone 11
+    generation: 13th
+    release_date: 2019-09-20
+
+  - title: iPhone XR
+    generation: 12th (budget)
+    release_date: 2018-10-26
+
+  - title: iPhone X
+    generation: 11th (premium)
+    release_date: 2017-11-03
+
+  - title: iPhone 7
+    generation: 10th
+    release_date: 2016-09-16
+
+  - title: iPhone 6s
+    generation: 9th
+    release_date: 2015-09-25
+
+  - title: iPhone 6
+    generation: 8th
+    release_date: 2014-09-19
+
+  - title: iPhone 5s
+    generation: 7th
+    release_date: 2013-09-20
+
+  - title: iPhone 5
+    generation: 6th
+    release_date: 2012-09-21
+
+  - title: iPhone 4s
+    generation: 5th
+    release_date: 2011-10-14
+
+  - title: iPhone 4
+    generation: 4th
+    release_date: 2010-06-24
+
+  - title: iPhone 3GS
+    generation: 3rd
+    release_date: 2009-06-19
+
+  - title: iPhone 3G
+    generation: 2nd
+    release_date: 2008-07-11
+
+  - title: iPhone
+    generation: 1st
+    release_date: 2007-06-29
