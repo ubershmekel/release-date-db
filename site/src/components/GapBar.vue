@@ -12,6 +12,10 @@ const props = defineProps(['gap', 'maxGap'])
       <div class="bar" :style="{ width: `${gap / maxGap * 100}%` }">
       </div>
     </div>
+    <div v-if="gap > maxGap" class="late-bar" :style="{ width: '3%' }">
+      <span class="plus">+</span>
+    </div>
+
     <p class="years-between">
       {{ gap.toFixed(1) }} years</p>
 
@@ -37,5 +41,23 @@ const props = defineProps(['gap', 'maxGap'])
   border-radius: 0.3rem;
   width: 16rem;
   overflow: hidden;
+}
+
+.plus {
+  color: #fff;
+
+}
+
+.late-bar {
+  background-color: #f00;
+  width: 3%;
+  height: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* vertical alignment */
+  justify-content: center;
+  /* horizontal alignment */
 }
 </style>

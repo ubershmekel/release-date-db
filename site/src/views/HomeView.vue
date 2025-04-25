@@ -25,16 +25,6 @@ onMounted(async () => {
   yamlData.value = data;
 })
 
-function averageReleaseGap(releases: Release[]) {
-  const dates = releases.filter(release => isValidDate(release.release_date)).map(release => release.release_date)
-  dates.push(new Date());
-  const sortedDates = dates.sort((a, b) => a.getTime() - b.getTime())
-  const firstDate = sortedDates[0]
-  const lastDate = sortedDates[sortedDates.length - 1]
-  return yearsBetween(firstDate, lastDate) / (releases.length - 1);
-}
-
-
 
 </script>
 
@@ -45,12 +35,10 @@ function averageReleaseGap(releases: Release[]) {
     </div>
     <p v-if="!yamlData && !errorMessage">Loading...</p>
     <div v-if="yamlData">
-      <h2>{{ yamlData.name }} release dates</h2>
+      <h2>{{ yamlData.name }}</h2>
+      <subtitle>Release dates</subtitle>
 
       <p>Creator: {{ yamlData.company }}</p>
-      <p>Average release gap: <span class="years-between">{{ averageReleaseGap(yamlData.releases).toFixed(1)
-          }} years</span></p>
-      <p>Releases:</p>
       <ReleaseList :releases="yamlData.releases"></ReleaseList>
     </div>
 
