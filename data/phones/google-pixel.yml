@@ -1,0 +1,34 @@
+name: Google Pixel
+creator: Google
+slug: google-pixel
+releases:
+  - title: Pixel 9, Pixel 9 Pro, Pixel 9 Pro XL, Pixel 9 Pro Fold
+    release_date: 2024-08-22
+  - title: Pixel 8a
+    release_date: 2024-05-14
+  - title: Pixel 8, Pixel 8 Pro
+    release_date: 2023-10-04
+  - title: Pixel 7a, Pixel Fold
+    release_date: 2023-05-10
+  - title: Pixel 7, Pixel 7 Pro
+    release_date: 2022-10-13
+  - title: Pixel 6a
+    release_date: 2022-07-21
+  - title: Pixel 6, Pixel 6 Pro
+    release_date: 2021-10-28
+  - title: Pixel 5a
+    release_date: 2021-08-26
+  - title: Pixel 5
+    release_date: 2020-10-15
+  - title: Pixel 4a
+    release_date: 2020-08-20
+  - title: Pixel 4, Pixel 4 XL
+    release_date: 2019-10-23
+  - title: Pixel 3a, Pixel 3a XL
+    release_date: 2019-05-15
+  - title: Pixel 3, Pixel 3 XL
+    release_date: 2018-10-18
+  - title: Pixel 2, Pixel 2 XL
+    release_date: 2017-10-17
+  - title: Pixel, Pixel XL
+    release_date: 2016-10-20

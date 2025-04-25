@@ -11,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav>
         <RouterLink to="/"><img alt="Release Date DB" class="logo" src="/favicon.png" />Release Date DB</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/about">Add releases to the db</RouterLink>
       </nav>
       <hr />
     </div>
