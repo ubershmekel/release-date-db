@@ -21,10 +21,10 @@ const router = createRouter({
       path: '/rd/:folder/:file',
       name: 'project',
       props: true,
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => ProjectView,
+      // To avoid the error "TypeError: u.then is not a function" on netlify
+      // We use a dynamic import here. Not sure why this is needed or why
+      // it works though.
+      component: () => import('../views/ProjectView.vue'),
     },
     {
       path: '/:pathMatch(.*)*', // 👈 Catch-all route
