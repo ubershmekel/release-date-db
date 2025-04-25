@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue'
 import yaml from 'js-yaml'
 import type { PageYaml, Release } from '@/types/yamls'
 import ReleaseList from '@/components/ReleaseList.vue'
+import { isValidDate } from '@/utils/dates'
 
 // thanks to `props: true` in route
 const props = defineProps(['folder', 'file'])
@@ -21,6 +22,17 @@ onMounted(async () => {
     errorMessage.value = `Error fetching data: ${res.statusText}`
     return
   }
+
+  for (const release of data.releases) {
+    if (!isValidDate(release.release_date)) {
+      // Check if it's a date string like '2025-10'
+      const date = new Date(release.release_date)
+      if (isValidDate(date)) {
+        release.release_date = date
+      }
+    }
+  }
+
   if (!data.releases) {
     errorMessage.value = 'Failed to fetch releases'
     return
