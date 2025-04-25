@@ -1,0 +1,35 @@
+name: Nintendo Home Console Series
+company: Nintendo
+slug: nintendo
+releases:
+  - title: "Nintendo Switch"
+    release_date: "2017-03-03"
+    generation: 8
+
+  - title: "Wii U"
+    release_date: "2012-11-18"
+    generation: 7
+
+  - title: "Wii"
+    release_date: "2006-11-19"
+    generation: 6
+
+  - title: "Nintendo GameCube"
+    release_date: "2001-11-18"
+    generation: 5
+
+  - title: "Nintendo 64"
+    release_date: "1996-09-29"
+    generation: 4
+
+  - title: "Super Nintendo Entertainment System (SNES)"
+    release_date: "1991-08-23"
+    generation: 3
+
+  - title: "Nintendo Entertainment System (NES)"
+    release_date: "1985-10-18"
+    generation: 2
+
+  - title: "Color TV-Game"
+    release_date: "1977-06-01"
+    generation: 1

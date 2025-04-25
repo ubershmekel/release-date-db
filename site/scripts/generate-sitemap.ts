@@ -5,6 +5,7 @@ import * as yaml from 'js-yaml'
 interface SitemapEntry {
   name: string
   link: string
+  category: string
 }
 
 async function generateSitemap() {
@@ -28,7 +29,7 @@ async function generateSitemap() {
           if (data && data.name && data.slug) {
             const category = path.basename(dir)
             const link = `/rd/${category}/${data.slug}`
-            sitemap.push({ name: data.name, link })
+            sitemap.push({ name: data.name, link, category })
           } else {
             console.warn(`Skipping ${filePath}: name or slug missing`)
           }

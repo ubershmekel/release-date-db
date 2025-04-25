@@ -33,7 +33,7 @@ function averageReleaseGap(releases: Release[]) {
 
 function recentRelease(releases: Release[]): Release | undefined {
   for (const release of releases) {
-    if (isValidDate(release.release_date)) {
+    if (isValidDate(release.release_date) && release.release_date.getTime() < new Date().getTime()) {
       return release
     }
   }

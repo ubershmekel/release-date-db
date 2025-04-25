@@ -1,34 +1,52 @@
 [
   {
     "name": "Pixel Buds",
-    "link": "/rd/audio/pixel-buds"
+    "link": "/rd/audio/pixel-buds",
+    "category": "audio"
   },
   {
     "name": "WH-1000XM noise-canceling headphones series",
-    "link": "/rd/audio/sony-xm"
+    "link": "/rd/audio/sony-xm",
+    "category": "audio"
   },
   {
     "name": "A Song of Ice and Fire",
-    "link": "/rd/books/game-of-thrones"
+    "link": "/rd/books/game-of-thrones",
+    "category": "books"
   },
   {
     "name": "Mario",
-    "link": "/rd/games/mario"
+    "link": "/rd/games/mario",
+    "category": "games"
+  },
+  {
+    "name": "Nintendo Home Console Series",
+    "link": "/rd/games/nintendo",
+    "category": "games"
   },
   {
     "name": "PlayStation Consoles",
-    "link": "/rd/games/playstation"
+    "link": "/rd/games/playstation",
+    "category": "games"
+  },
+  {
+    "name": "Xbox Console Series",
+    "link": "/rd/games/xbox",
+    "category": "games"
   },
   {
     "name": "Fast & Furious",
-    "link": "/rd/movies/fast-furious"
+    "link": "/rd/movies/fast-furious",
+    "category": "movies"
   },
   {
-    "name": "Marvel Comic Universe Franchise",
-    "link": "/rd/movies/marvel"
+    "name": "Marvel Comic Universe Movie Franchise",
+    "link": "/rd/movies/marvel",
+    "category": "movies"
   },
   {
     "name": "One-Punch Man",
-    "link": "/rd/shows/one-punch-man"
+    "link": "/rd/shows/one-punch-man",
+    "category": "shows"
   }
 ]
