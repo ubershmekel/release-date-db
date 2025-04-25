@@ -3,28 +3,31 @@ creator: One
 slug: one-punch-man
 releases:
   - season: 3
-    title: 'One-Punch Man Season 3'
-    studio: 'J.C.Staff'
-    episodes: 'TBA'
-    release_date: 'TBD'
-    finale_date: 'TBA'
-    notes: 'Season 3 is scheduled to premiere in October 2025, continuing the Monster
-      Association arc.'
+    title: "One-Punch Man Season 3"
+    studio: "J.C.Staff"
+    episodes: "TBA"
+    release_date: "TBD"
+    finale_date: "TBA"
+    notes:
+      "Season 3 is scheduled to premiere in October 2025, continuing the Monster
+      Association arc."
 
   - season: 2
-    title: 'One-Punch Man Season 2'
-    studio: 'J.C.Staff'
+    title: "One-Punch Man Season 2"
+    studio: "J.C.Staff"
     episodes: 12
-    release_date: '2019-04-09'
-    finale_date: '2019-07-02'
-    notes: 'Season 2 continued the story with a new animation studio, focusing on the
-      Monster Association arc.'
+    release_date: "2019-04-09"
+    finale_date: "2019-07-02"
+    notes:
+      "Season 2 continued the story with a new animation studio, focusing on the
+      Monster Association arc."
 
   - season: 1
-    title: 'One-Punch Man Season 1'
-    studio: 'Madhouse'
+    title: "One-Punch Man Season 1"
+    studio: "Madhouse"
     episodes: 12
-    release_date: '2015-10-05'
-    finale_date: '2015-12-20'
-    notes: "Season 1 introduced Saitama's story with high-quality animation and was
+    release_date: "2015-10-05"
+    finale_date: "2015-12-20"
+    notes:
+      "Season 1 introduced Saitama's story with high-quality animation and was
       well-received by audiences."

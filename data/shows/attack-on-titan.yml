@@ -1,0 +1,28 @@
+name: Attack on Titan
+creator: Hajime Isayama
+slug: attack-on-titan
+releases:
+  - title: "The Final Season Special 2" # Also known as The Final Season Part 3 Part 2 or The Conclusion
+    release_date: "2023-11-05"
+    type: "Special"
+  - title: "The Final Season Special 1" # Also known as The Final Season Part 3 Part 1
+    release_date: "2023-03-04"
+    type: "Special"
+  - title: "The Final Season Part 2"
+    release_date: "2022-01-09"
+    type: "TV Series Part"
+  - title: "The Final Season Part 1"
+    release_date: "2020-12-07"
+    type: "TV Series Part"
+  - title: "Season 3 Part 2"
+    release_date: "2019-04-29"
+    type: "TV Series Part"
+  - title: "Season 3 Part 1"
+    release_date: "2018-07-23"
+    type: "TV Series Part"
+  - title: "Season 2"
+    release_date: "2017-04-01"
+    type: "TV Series"
+  - title: "Season 1"
+    release_date: "2013-04-07"
+    type: "TV Series"

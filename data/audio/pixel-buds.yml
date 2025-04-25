@@ -4,24 +4,29 @@ slug: pixel-buds
 releases:
   - title: Pixel Buds Pro 2
     release_date: 2024-09-26
-    notes: 'Enhanced ANC, integrated Gemini AI assistant, and a more compact,
-      comfortable design.'
+    notes:
+      "Enhanced ANC, integrated Gemini AI assistant, and a more compact,
+      comfortable design."
 
   - title: Pixel Buds Pro
     release_date: 2022-07-28
-    notes: 'Introduced active noise cancellation (ANC), transparency mode, and
-      multipoint connectivity.'
+    notes:
+      "Introduced active noise cancellation (ANC), transparency mode, and
+      multipoint connectivity."
 
   - title: Pixel Buds A-Series
     release_date: 2021-06-17
-    notes: 'Affordable variant with similar design to 2nd Gen; lacked wireless
-      charging and some premium features.'
+    notes:
+      "Affordable variant with similar design to 2nd Gen; lacked wireless
+      charging and some premium features."
 
   - title: Pixel Buds (2nd Gen)
     release_date: 2020-04-27
-    notes: 'First truly wireless design with improved comfort and sound quality.'
+    notes:
+      "First truly wireless design with improved comfort and sound quality."
 
   - title: Pixel Buds (1st Gen)
     release_date: 2017-10-04
-    notes: 'Announced at the Made by Google event; featured Google Assistant
-      integration and real-time translation capabilities.'
+    notes:
+      "Announced at the Made by Google event; featured Google Assistant
+      integration and real-time translation capabilities."
