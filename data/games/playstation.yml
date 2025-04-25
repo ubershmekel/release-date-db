@@ -2,39 +2,17 @@ name: PlayStation Consoles
 company: Sony
 slug: playstation
 releases:
-  - title: PlayStation 5 Slim
-    release_date: 2023-11-10
-    note: Slim revision of PS5 with optional disc drive
-
   - title: PlayStation 5
     release_date: 2020-11-12
-
-  - title: PlayStation 4 Pro
-    release_date: 2016-11-10
-
-  - title: PlayStation 4 Slim
-    release_date: 2016-09-15
 
   - title: PlayStation 4
     release_date: 2013-11-15
 
-  - title: PlayStation 3 Super Slim
-    release_date: 2012-09-25
-
-  - title: PlayStation 3 Slim
-    release_date: 2009-09-01
-
   - title: PlayStation 3
     release_date: 2006-11-11
 
-  - title: PlayStation 2 Slim
-    release_date: 2004-11-01
-
   - title: PlayStation 2
     release_date: 2000-03-04
-
-  - title: PlayStation (PS One redesign)
-    release_date: 2000-07-07
 
   - title: PlayStation
     release_date: 1994-12-03
