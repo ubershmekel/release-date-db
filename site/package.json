@@ -5,7 +5,8 @@
   "scripts": {
     "build": "run-p type-check generate-sitemap \"build-only {@}\" --",
     "build-only": "vite build",
-    "dev": "vite",
+    "dev": "run-s generate-sitemap dev-only",
+    "dev-only": "vite",
     "format": "prettier --write src/",
     "generate-sitemap": "tsx --tsconfig tsconfig.node.json scripts/generate-sitemap.ts",
     "lint": "eslint . --fix",
