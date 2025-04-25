@@ -1,31 +1,31 @@
 name: Xbox Console Series
-company: Microsoft
+creator: Microsoft
 slug: xbox
 releases:
-  - title: "Xbox Series X/S"
-    release_date: "2020-11-10"
+  - title: 'Xbox Series X/S'
+    release_date: '2020-11-10'
     generation: 4
 
-  - title: "Xbox One X"
-    release_date: "2017-11-07"
+  - title: 'Xbox One X'
+    release_date: '2017-11-07'
     generation: 3
 
-  - title: "Xbox One S"
-    release_date: "2016-08-02"
+  - title: 'Xbox One S'
+    release_date: '2016-08-02'
     generation: 3
 
-  - title: "Xbox One"
-    release_date: "2013-11-22"
+  - title: 'Xbox One'
+    release_date: '2013-11-22'
     generation: 3
 
-  - title: "Xbox 360 S"
-    release_date: "2010-06-14"
+  - title: 'Xbox 360 S'
+    release_date: '2010-06-14'
     generation: 2
 
-  - title: "Xbox 360"
-    release_date: "2005-11-22"
+  - title: 'Xbox 360'
+    release_date: '2005-11-22'
     generation: 2
 
-  - title: "Xbox"
-    release_date: "2001-11-15"
+  - title: 'Xbox'
+    release_date: '2001-11-15'
     generation: 1

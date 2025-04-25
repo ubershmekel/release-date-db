@@ -1,33 +1,28 @@
 name: WH-1000XM noise-canceling headphones series
-company: Sony
+creator: Sony
 slug: sony-xm
 releases:
-  - title: "WH-1000XM6"
-    release_date: "2025-07"
-    notes:
-      "Expected release with anticipated upgrades in design and sound quality."
+  - title: 'WH-1000XM6'
+    release_date: '2025-07'
+    notes: 'Expected release with anticipated upgrades in design and sound quality.'
 
-  - title: "WH-1000XM5"
-    release_date: "2022-05-20"
-    notes:
-      "Redesigned with a slimmer profile and improved active noise cancellation."
+  - title: 'WH-1000XM5'
+    release_date: '2022-05-20'
+    notes: 'Redesigned with a slimmer profile and improved active noise cancellation.'
 
-  - title: "WH-1000XM4"
-    release_date: "2020-08-18"
-    notes:
-      "Added multipoint Bluetooth connectivity and 'Speak-to-Chat' feature."
+  - title: 'WH-1000XM4'
+    release_date: '2020-08-18'
+    notes: "Added multipoint Bluetooth connectivity and 'Speak-to-Chat' feature."
 
-  - title: "WH-1000XM3"
-    release_date: "2018-08-30"
-    notes:
-      "Introduced USB-C charging and enhanced comfort with a lighter design."
+  - title: 'WH-1000XM3'
+    release_date: '2018-08-30'
+    notes: 'Introduced USB-C charging and enhanced comfort with a lighter design.'
 
-  - title: "WH-1000XM2"
-    release_date: "2017-08"
-    notes: "Improved noise cancellation and battery life over the MDR-1000X."
+  - title: 'WH-1000XM2'
+    release_date: '2017-08'
+    notes: 'Improved noise cancellation and battery life over the MDR-1000X.'
 
-  - title: "MDR-1000X"
-    release_date: "2016-09"
-    notes:
-      "Sony's first premium wireless noise-canceling headphones, marking the
+  - title: 'MDR-1000X'
+    release_date: '2016-09'
+    notes: "Sony's first premium wireless noise-canceling headphones, marking the
       beginning of the 1000X series."
