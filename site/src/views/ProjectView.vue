@@ -51,7 +51,9 @@ onMounted(async () => {
     <p v-if="!yamlData && !errorMessage">Loading...</p>
     <div v-if="yamlData">
       <h2>{{ yamlData.name }}</h2>
-      <h3>Release dates</h3>
+      <h3>Release dates<a :href="`https://github.com/ubershmekel/release-date-db/edit/main/data/${folder}/${file}.yml`"
+          title="edit">✏️</a>
+      </h3>
 
       <p>Creator: {{ yamlData.creator }}</p>
       <ReleaseList :releases="yamlData.releases"></ReleaseList>
