@@ -21,11 +21,18 @@ for (const key of keys) {
 
 <template>
   <main>
+    <p>
+      I made this site so I could guess how much time is left until the next Pixel is
+      coming out so I could decide whether
+      to buy it now or wait for the next generation. I also
+      wanted to estimate how much longer I have to wait until Nintendo release their next Mario game. You can
+      <RouterLink to="/about">add to the db</RouterLink> too btw.
+    </p>
     <div v-for="categoryObj in categoryList" :key="categoryObj.categoryName">
       <h3>{{ categoryObj.categoryName }}</h3>
       <ul>
         <li v-for="item in categoryObj.projects" :key="item.link">
-          <a :href="item.link">{{ item.name }}</a>
+          <a class="project-link" :href="item.link">{{ item.name }}</a>
         </li>
       </ul>
     </div>
@@ -33,7 +40,7 @@ for (const key of keys) {
 </template>
 
 <style scoped>
-a {
+.project-link {
   display: block;
 }
 
