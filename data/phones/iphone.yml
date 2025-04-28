@@ -1,6 +1,6 @@
 name: iPhone
 creator: Apple
-slug: iphone
+
 releases:
   - title: iPhone 16
     generation: 18th

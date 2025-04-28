@@ -1,0 +1,20 @@
+name: The Elder Scrolls
+creator: Bethesda Game Studios
+releases:
+  - title: The Elder Scrolls Online
+    release_date: 2014-04-04
+
+  - title: "The Elder Scrolls V: Skyrim"
+    release_date: 2011-11-11
+
+  - title: "The Elder Scrolls IV: Oblivion"
+    release_date: 2006-03-20
+
+  - title: "The Elder Scrolls III: Morrowind"
+    release_date: 2002-05-01
+
+  - title: "The Elder Scrolls II: Daggerfall"
+    release_date: 1996-08-31
+
+  - title: "The Elder Scrolls: Arena"
+    release_date: 1994-03-25
