@@ -1,6 +1,5 @@
 name: PlayStation Consoles
 creator: Sony
-slug: playstation
 releases:
   - title: PlayStation 5
     release_date: 2020-11-12

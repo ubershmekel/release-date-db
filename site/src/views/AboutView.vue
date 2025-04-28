@@ -36,7 +36,6 @@ recent release first. Follow this format:
 \`\`\`
 name: Mario
 creator: Nintendo
-slug: mario
 releases:
   - title: Super Mario Bros. Wonder
     release_date: 2023-10-20

@@ -1,6 +1,5 @@
 name: Game of Thrones books (A Song of Ice and Fire)
 creator: George R. R. Martin
-slug: game-of-thrones
 releases:
   - title: A Dream of Spring
     platform: Print

@@ -1,6 +1,5 @@
 name: Nintendo Home Console Series
 creator: Nintendo
-slug: nintendo
 releases:
   - title: Nintendo Switch
     release_date: 2017-03-03

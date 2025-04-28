@@ -1,7 +1,6 @@
 export interface PageYaml {
   name: string
   creator: string
-  slug: string
   releases: Release[]
 }
 

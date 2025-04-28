@@ -1,6 +1,5 @@
 name: Google Pixel
 creator: Google
-slug: google-pixel
 releases:
   - title: Pixel 9, Pixel 9 Pro, Pixel 9 Pro XL, Pixel 9 Pro Fold
     release_date: 2024-08-22

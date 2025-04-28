@@ -1,6 +1,5 @@
 name: Xbox Console Series
 creator: Microsoft
-slug: xbox
 releases:
   - title: Xbox Series X/S
     release_date: 2020-11-10

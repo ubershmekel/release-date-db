@@ -25,14 +25,15 @@ async function generateSitemap() {
       } else if (path.extname(file) === '.yml') {
         try {
           const fileContent = fs.readFileSync(filePath, 'utf8')
-          const data = yaml.load(fileContent) as { name: string; slug: string }
-          if (data && data.name && data.slug) {
+          const yamlData = yaml.load(fileContent) as any
+          if (yamlData && yamlData.name) {
             const category = path.basename(dir)
-            const link = `/rd/${category}/${data.slug}`
-            sitemap.push({ name: data.name, link, category })
+            const fname = path.basename(filePath)
+            const link = `/rd/${category}/${fname}`
+            sitemap.push({ name: yamlData.name, link, category })
             console.log(`Added ${filePath} to sitemap`)
           } else {
-            console.warn(`Skipping ${filePath}: name or slug missing`)
+            console.warn(`Skipping ${filePath}: yaml data missing`)
           }
         } catch (error) {
           console.error(`⚠️Error reading or parsing ${filePath}:`, error)
