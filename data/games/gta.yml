@@ -1,0 +1,26 @@
+name: Grand Theft Auto
+creator: Rockstar Games
+releases:
+  - title: Grand Theft Auto VI
+    release_date: 2025-12-30
+
+  - title: Grand Theft Auto V
+    release_date: 2013-09-17
+
+  - title: Grand Theft Auto IV
+    release_date: 2008-04-29
+
+  - title: "Grand Theft Auto: San Andreas"
+    release_date: 2004-10-26
+
+  - title: "Grand Theft Auto: Vice City"
+    release_date: 2002-10-29
+
+  - title: Grand Theft Auto III
+    release_date: 2001-10-22
+
+  - title: Grand Theft Auto 2
+    release_date: 1999-10-22
+
+  - title: Grand Theft Auto
+    release_date: 1997-10-21

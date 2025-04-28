@@ -1,0 +1,23 @@
+name: Harry Potter
+creator: J.K. Rowling
+releases:
+  - title: Harry Potter and the Deathly Hallows
+    release_date: 2007-07-21
+
+  - title: Harry Potter and the Half-Blood Prince
+    release_date: 2005-07-16
+
+  - title: Harry Potter and the Order of the Phoenix
+    release_date: 2003-06-21
+
+  - title: Harry Potter and the Goblet of Fire
+    release_date: 2000-07-08
+
+  - title: Harry Potter and the Prisoner of Azkaban
+    release_date: 1999-07-08
+
+  - title: Harry Potter and the Chamber of Secrets
+    release_date: 1998-07-02
+
+  - title: Harry Potter and the Philosopher's Stone
+    release_date: 1997-06-26

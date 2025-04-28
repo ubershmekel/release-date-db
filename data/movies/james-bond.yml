@@ -1,0 +1,77 @@
+name: James Bond
+creator: Ian Fleming
+releases:
+  - title: No Time to Die
+    release_date: 2021-09-30
+
+  - title: Spectre
+    release_date: 2015-10-26
+
+  - title: Skyfall
+    release_date: 2012-10-23
+
+  - title: Quantum of Solace
+    release_date: 2008-10-29
+
+  - title: Casino Royale (2006)
+    release_date: 2006-11-14
+
+  - title: Die Another Day
+    release_date: 2002-11-18
+
+  - title: The World Is Not Enough
+    release_date: 1999-11-08
+
+  - title: Tomorrow Never Dies
+    release_date: 1997-12-09
+
+  - title: GoldenEye
+    release_date: 1995-11-13
+
+  - title: Licence to Kill
+    release_date: 1989-06-13
+
+  - title: The Living Daylights
+    release_date: 1987-06-27
+
+  - title: A View to a Kill
+    release_date: 1985-05-22
+
+  - title: Octopussy
+    release_date: 1983-06-06
+
+  - title: For Your Eyes Only
+    release_date: 1981-06-24
+
+  - title: Moonraker
+    release_date: 1979-06-26
+
+  - title: The Spy Who Loved Me
+    release_date: 1977-07-07
+
+  - title: The Man with the Golden Gun
+    release_date: 1974-12-19
+
+  - title: Live and Let Die
+    release_date: 1973-06-27
+
+  - title: Diamonds Are Forever
+    release_date: 1971-12-14
+
+  - title: On Her Majesty's Secret Service
+    release_date: 1969-12-18
+
+  - title: You Only Live Twice
+    release_date: 1967-06-13
+
+  - title: Thunderball
+    release_date: 1965-12-09
+
+  - title: Goldfinger
+    release_date: 1964-09-17
+
+  - title: From Russia with Love
+    release_date: 1963-10-10
+
+  - title: Dr. No
+    release_date: 1962-10-05
