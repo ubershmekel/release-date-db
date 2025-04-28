@@ -41,6 +41,9 @@ const props = defineProps(['gap', 'maxGap'])
   border-radius: 0.3rem;
   width: 16rem;
   overflow: hidden;
+  /* flex-shrink: 0 is when mobile causes the red plus to take
+  space from the blue bar */
+  flex-shrink: 0;
 }
 
 .plus {
