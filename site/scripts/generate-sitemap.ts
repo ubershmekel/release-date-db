@@ -29,7 +29,8 @@ async function generateSitemap() {
           if (yamlData && yamlData.name) {
             const category = path.basename(dir)
             const fname = path.basename(filePath)
-            const link = `/rd/${category}/${fname}`
+            const slug = fname.replace('.yml', '')
+            const link = `/rd/${category}/${slug}`
             sitemap.push({ name: yamlData.name, link, category })
             console.log(`Added ${filePath} to sitemap`)
           } else {

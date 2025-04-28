@@ -3,11 +3,11 @@
     <h2>About Release Date DB</h2>
     <p>
       The idea is to have a database of release dates for games and other
-      projects. This will hopefully help estimate when the next release will be.
+      projects. This will hopefully help estimate when the next release will be. Please bring in new releases data for
+      projects that a lot of folks are waiting for 🙏
     </p>
     <h2>How to contribute</h2>
-    <p>Please bring in new releases data for projects that a lot of people are waiting for 🙏</p>
-    <p>1. You can generate the YAML yourself. But you can also use your AI agent with the following prompt:</p>
+    <p>1. You can generate the YAML manually. But you can also use your AI agent with the following prompt:</p>
     <CopyButton :text="instructions" />
     <pre>
       {{ instructions }}
