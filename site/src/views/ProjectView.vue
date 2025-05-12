@@ -23,6 +23,8 @@ onMounted(async () => {
     return
   }
 
+  document.title = data.name + " - Release Date DB";
+
   for (const release of data.releases) {
     if (!isValidDate(release.release_date)) {
       // Check if it's a date string like '2025-10'
