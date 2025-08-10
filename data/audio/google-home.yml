@@ -1,0 +1,17 @@
+name: Google Home (smart speakers)
+creator: Google
+releases:
+  - title: Nest Audio
+    release_date: 2020-10-05
+
+  - title: Nest Mini (2nd gen)
+    release_date: 2019-10-22
+
+  - title: Google Home Max
+    release_date: 2017-12-11
+
+  - title: Google Home Mini
+    release_date: 2017-10-19
+
+  - title: Google Home
+    release_date: 2016-11-04
