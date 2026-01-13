@@ -1,0 +1,38 @@
+name: The Legend of Zelda
+creator: Nintendo
+releases:
+  - title: "The Legend of Zelda: Echoes of Wisdom"
+    release_date: 2024-09-26
+
+  - title: "The Legend of Zelda: Tears of the Kingdom"
+    release_date: 2023-05-12
+
+  - title: "The Legend of Zelda: Breath of the Wild"
+    release_date: 2017-03-03
+
+  - title: "The Legend of Zelda: Skyward Sword"
+    release_date: 2011-11-23
+
+  - title: "The Legend of Zelda: Twilight Princess"
+    release_date: 2006-12-02
+
+  - title: "The Legend of Zelda: Four Swords Adventures"
+    release_date: 2004-03-18
+
+  - title: "The Legend of Zelda: The Wind Waker"
+    release_date: 2002-12-13
+
+  - title: "The Legend of Zelda: Majora's Mask"
+    release_date: 2000-04-27
+
+  - title: "The Legend of Zelda: Ocarina of Time"
+    release_date: 1998-11-21
+
+  - title: "The Legend of Zelda: A Link to the Past"
+    release_date: 1991-11-21
+
+  - title: "Zelda II: The Adventure of Link"
+    release_date: 1987-01-14
+
+  - title: The Legend of Zelda
+    release_date: 1986-02-21
