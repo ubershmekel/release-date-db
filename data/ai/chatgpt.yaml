@@ -1,0 +1,50 @@
+name: ChatGPT / GPT models
+creator: OpenAI
+releases:
+  - title: GPT-5.5
+    release_date: 2026-04-23
+
+  - title: "GPT-5.4: GPT-5.4 Thinking, GPT-5.4 Pro, GPT-5.4-Cyber"
+    release_date: 2026-03-05
+
+  - title: "GPT-5.3: GPT-5.3 Instant, GPT-5.3-Codex"
+    release_date: 2026-02-05
+
+  - title: "GPT-5.2: GPT-5.2 Instant, GPT-5.2 Thinking, GPT-5.2 Pro, GPT-5.2-Codex"
+    release_date: 2025-12-11
+
+  - title: "GPT-5.1: GPT-5.1 Instant, GPT-5.1 Thinking"
+    release_date: 2025-11-12
+
+  - title: "GPT-5: GPT-5 Instant, GPT-5 Thinking, GPT-5 Pro"
+    release_date: 2025-08-07
+
+  - title: "OpenAI o3 / o4-mini"
+    release_date: 2025-04-16
+
+  - title: "GPT-4.1: GPT-4.1, GPT-4.1 mini, GPT-4.1 nano"
+    release_date: 2025-04-14
+
+  - title: GPT-4.5
+    release_date: 2025-02-27
+
+  - title: "OpenAI o1: o1-preview, o1-mini, o1"
+    release_date: 2024-09-12
+
+  - title: "GPT-4o: GPT-4o, GPT-4o mini"
+    release_date: 2024-05-13
+
+  - title: GPT-4
+    release_date: 2023-03-14
+
+  - title: "GPT-3.5: GPT-3.5, ChatGPT"
+    release_date: 2022-11-30
+
+  - title: GPT-3
+    release_date: 2020-05-28
+
+  - title: GPT-2
+    release_date: 2019-02-14
+
+  - title: GPT-1
+    release_date: 2018-06-11
