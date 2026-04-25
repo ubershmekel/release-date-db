@@ -19,9 +19,6 @@ releases:
   - title: "GPT-5: GPT-5 Instant, GPT-5 Thinking, GPT-5 Pro"
     release_date: 2025-08-07
 
-  - title: "OpenAI o3 / o4-mini"
-    release_date: 2025-04-16
-
   - title: "GPT-4.1: GPT-4.1, GPT-4.1 mini, GPT-4.1 nano"
     release_date: 2025-04-14
 
