@@ -28,10 +28,12 @@
 import CopyButton from '@/components/CopyButton.vue';
 
 const instructions = `
-Generate a yaml file for PLACE_YOUR_BOOK_SHOW_NAME_HERE major releases,
-so instead of rows for variant releases in the same year, just add
-them to the title. Make sure to sort the releases with the most
-recent release first. Make sure to use quotes if there are colons in the title.
+Generate a yml file for "PLACE_YOUR_BOOK_SHOW_NAME_HERE" major releases.
+Do not make a row for variant releases in the same year, just add
+them to the title.
+Sort the releases with the most recent release first.
+Name the file ".yml" (not ".yaml").
+Make sure to use quotes if there are colons in the title.
 Follow this format:
 
 \`\`\`
